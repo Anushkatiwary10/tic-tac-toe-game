@@ -33,6 +33,7 @@ nav ul{
     grid-template-rows: repeat(3,10vw);
     grid-template-columns: repeat(3,10vw);
     font-family: 'Roboto','sans-serif';
+    position: relative;
 }
 
 .box{
@@ -81,6 +82,13 @@ nav ul{
 .info{
     font-size: 20px;
 }
+.line{
+    background-color: rgb(125, 86, 153);
+    height: 3px;
+    width: 0;
+    position: absolute;
+    transition:width 1s ease-in-out ;
+}
 @media screen and (max-width:800px){
     .gameContainer{
         flex-wrap: wrap;
@@ -90,5 +98,10 @@ nav ul{
     }
     .gameInfo h1{
         font-size: 1.5rem;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
     }
 }
