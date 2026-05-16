@@ -12,3 +12,12 @@ A simple Tic Tac Toe game built using HTML, CSS and JavaScript.
 - HTML
 - CSS
 - JavaScript
+
+Hint
+
+After every move:
+
+count filled boxes
+if count == 9
+and gameover == false
+show draw message
